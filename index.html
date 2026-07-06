@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турнир по Counter-Strike 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======================== ШАПКА ======================== -->
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">ТУРНИР ПО<br>COUNTER-STRIKE 2</h1>
+            <p class="header-subtitle">5×5 • 8 команд • Призовой фонд 25 BYN</p>
+            <button class="header-cta" onclick="scrollToSection('registration')">ПОДАТЬ ЗАЯВКУ</button>
+        </div>
+    </header>
+
+    <!-- ======================== ПРИЗОВОЙ ФОНД ======================== -->
+    <section id="prizes" class="section">
+        <div class="container">
+            <h2 class="section-title">ПРИЗОВОЙ ФОНД</h2>
+            <div class="prize-card">
+                <div class="prize-icon">🏆</div>
+                <div class="prize-place">1 МЕСТО</div>
+                <div class="prize-amount">25 BYN</div>
+                <div class="prize-convert">≈ 8 USD &nbsp;|&nbsp; ≈ 670 RUB</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== ХРОНОЛОГИЯ ======================== -->
+    <section id="timeline" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">ХРОНОЛОГИЯ ТУРНИРА</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">До 15 июля</div>
+                        <div class="timeline-text">Подача заявок (включительно)</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">16 июля</div>
+                        <div class="timeline-text">Проверка заявок и профилей</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">17 июля</div>
+                        <div class="timeline-text">Жеребьёвка и деление на команды</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">19 июля</div>
+                        <div class="timeline-text">1/4 финала</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">20 июля</div>
+                        <div class="timeline-text">1/2 финала</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">21 июля</div>
+                        <div class="timeline-text">🏆 ФИНАЛ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== СЕТКА ТУРНИРА ======================== -->
+    <section id="bracket" class="section">
+        <div class="container">
+            <h2 class="section-title">СЕТКА ТУРНИРА</h2>
+            <div class="playoff">
+                <h3 class="playoff-title">ПЛЕЙ-ОФФ</h3>
+                <div class="bracket-grid">
+                    <div class="bracket-round">
+                        <div class="bracket-label">1/4 — 19 июля</div>
+                        <div class="bracket-match"><div class="bracket-team">Команда 1</div><div class="bracket-vs">VS</div><div class="bracket-team">Команда 2</div></div>
+                        <div class="bracket-match"><div class="bracket-team">Команда 3</div><div class="bracket-vs">VS</div><div class="bracket-team">Команда 4</div></div>
+                        <div class="bracket-match"><div class="bracket-team">Команда 5</div><div class="bracket-vs">VS</div><div class="bracket-team">Команда 6</div></div>
+                        <div class="bracket-match"><div class="bracket-team">Команда 7</div><div class="bracket-vs">VS</div><div class="bracket-team">Команда 8</div></div>
+                    </div>
+                    <div class="bracket-arrow">→</div>
+                    <div class="bracket-round">
+                        <div class="bracket-label">1/2 — 20 июля</div>
+                        <div class="bracket-match"><div class="bracket-team">Победитель 1</div><div class="bracket-vs">VS</div><div class="bracket-team">Победитель 2</div></div>
+                        <div class="bracket-match"><div class="bracket-team">Победитель 3</div><div class="bracket-vs">VS</div><div class="bracket-team">Победитель 4</div></div>
+                    </div>
+                    <div class="bracket-arrow">→</div>
+                    <div class="bracket-round">
+                        <div class="bracket-label">ФИНАЛ — 21 июля</div>
+                        <div class="bracket-match bracket-final"><div class="bracket-team">Финалист 1</div><div class="bracket-vs">VS</div><div class="bracket-team">Финалист 2</div></div>
+                        <div class="trophy"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="bracket-note">Время матчей согласуется с участниками 18 июля. Утро (10:00–13:00) или вечер (17:00–21:00).</p>
+        </div>
+    </section>
+
+    <!-- ======================== ТРАНСЛЯЦИИ ======================== -->
+    <section id="stream" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">СЛЕДИТЕ ЗА МАТЧАМИ</h2>
+            <p class="stream-subtitle">Прямые трансляции всех матчей турнира</p>
+            <div class="stream-link-wrapper">
+                <a href="https://www.twitch.tv/cs2tournamentcs2?sr=a" target="_blank" class="btn btn-twitch btn-large">📺 СМОТРЕТЬ НА TWITCH</a>
+            </div>
+            <p class="stream-note">Подписывайтесь чтобы не пропустить матчи!</p>
+        </div>
+    </section>
+
+    <!-- ======================== РЕГИСТРАЦИЯ ======================== -->
+    <section id="registration" class="section">
+        <div class="container">
+            <h2 class="section-title">РЕГИСТРАЦИЯ</h2>
+
+            <div class="warning-box">
+                <span class="warning-icon">⚠️</span>
+                <div class="warning-text">
+                    <strong>ВНИМАНИЕ!</strong> Перед подачей заявки обязательно зайди на Discord-сервер и ознакомься с регламентом.<br>
+                    Заявки от тех, кого нет на сервере — отклоняются.<br>
+                    <u>Неправильно указанные никнеймы Discord или Telegram приведут к невозможности участия в турнире.</u>
+                </div>
+                <div class="warning-buttons">
+                    <a href="https://discord.gg/ZRHbYmT8f" target="_blank" class="btn btn-outline">🔗 Discord-сервер</a>
+                    <button type="button" class="btn btn-primary" onclick="openRulesModal()">📜 Открыть регламент</button>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <button type="button" class="tab-btn active" data-tab="solo" onclick="switchTab('solo')">СОЛО</button>
+                <button type="button" class="tab-btn" data-tab="duo" onclick="switchTab('duo')">ДУО</button>
+                <button type="button" class="tab-btn" data-tab="trio" onclick="switchTab('trio')">ТРИО</button>
+                <button type="button" class="tab-btn" data-tab="quadro" onclick="switchTab('quadro')">КВАТРО</button>
+                <button type="button" class="tab-btn" data-tab="team" onclick="switchTab('team')">КОМАНДА (5)</button>
+            </div>
+
+            <form id="reg-form" class="reg-form" novalidate>
+                <div id="players-container"></div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="rules-check" onchange="updateSubmitButton()">
+                        <span id="rules-check-text">Я ознакомлен и согласен с регламентом турнира</span>
+                    </label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="discord-check" onchange="updateSubmitButton()">
+                        <span id="discord-check-text">Я подтверждаю, что зашёл на Discord-сервер турнира</span>
+                    </label>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn-submit disabled" disabled>ЗАПОЛНИТЕ ВСЕ ПОЛЯ И ПОДТВЕРДИТЕ УСЛОВИЯ</button>
+                <p id="submit-hint" class="submit-hint hint-blocked">Заполните все обязательные поля и подтвердите условия</p>
+
+                <div id="success-message" class="success-message" style="display: none;">
+                    <span class="success-icon">✅</span>
+                    <h3>ЗАЯВКА УСПЕШНО ОТПРАВЛЕНА!</h3>
+                    <p>Проверка займёт до 24 часов. Вся информация придёт в Discord и Telegram.</p>
+                    <p><strong>Убедитесь что вы правильно указали никнеймы — иначе мы не сможем с вами связаться.</strong></p>
+                </div>
+
+                <div class="contacts-under-form">
+                    <p>Если не удалось подать заявку — напишите нам в Discord или Telegram.</p>
+                    <div class="contacts-buttons">
+                        <a href="https://discord.gg/ZRHbYmT8f" target="_blank" class="btn btn-outline">💬 Discord</a>
+                        <a href="https://t.me/+q0eMk3_UBexjOTZi" target="_blank" class="btn btn-outline">📢 Telegram</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ======================== РЕГЛАМЕНТ ======================== -->
+    <section id="rules" class="section section-alt">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">РЕГЛАМЕНТ ТУРНИРА</h2>
+            <button type="button" class="btn btn-primary btn-large" onclick="openRulesModal()">ОТКРЫТЬ РЕГЛАМЕНТ</button>
+        </div>
+    </section>
+
+    <div id="rules-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>РЕГЛАМЕНТ ТУРНИРА</h2>
+                <button type="button" class="modal-close" onclick="closeRulesModal()">✕</button>
+            </div>
+            <div class="modal-body" id="rules-text"></div>
+            <div class="modal-footer">
+                <label class="checkbox-group">
+                    <input type="checkbox" id="modal-rules-check" onchange="syncRulesCheck()">
+                    <span>Я ознакомлен и согласен с регламентом турнира</span>
+                </label>
+                <button type="button" class="btn btn-primary" onclick="closeRulesModal()">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================== СПОНСОР ======================== -->
+    <section id="sponsor" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">СПОНСОР ТУРНИРА</h2>
+            <p class="sponsor-subtitle">Официальный партнёр турнира</p>
+            <div class="sponsor-card">
+                <div class="sponsor-avatar">
+                    <span class="sponsor-avatar-text">BrB</span>
+                </div>
+                <div class="sponsor-logo">
+                    <span class="sponsor-brb">BrB</span>
+                    <span class="sponsor-team">team</span>
+                </div>
+                <p class="sponsor-desc">BrB team — киберспортивная организация, поддерживающая молодых игроков и развитие комьюнити.</p>
+                <a href="ВСТАВИТЬ_ССЫЛКУ_СПОНСОРА" target="_blank" class="btn btn-outline">СЛЕДИТЕ ЗА BrB team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== КОНТАКТЫ ======================== -->
+    <section id="contacts" class="section">
+        <div class="container">
+            <h2 class="section-title">КОНТАКТЫ</h2>
+            <div class="contacts-links">
+                <a href="https://discord.gg/ZRHbYmT8f" target="_blank" class="btn btn-outline btn-large">DISCORD-СЕРВЕР</a>
+                <a href="https://t.me/+q0eMk3_UBexjOTZi" target="_blank" class="btn btn-outline btn-large">TELEGRAM-КАНАЛ</a>
+            </div>
+            <p class="contacts-note">Для участия обязательно зайти в Discord и Telegram. Неправильно указанные никнеймы — причина отклонения заявки.</p>
+        </div>
+    </section>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2026 Турнир по Counter-Strike 2. Все права защищены.</p>
+            <p class="footer-sub">При поддержке BrB team.</p>
+            <p class="footer-sub">Организатор турнира. Сайт создан для участников.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
